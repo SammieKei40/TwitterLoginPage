@@ -99,22 +99,51 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
+.header {
+    overflow: hidden;
+    background-color: white;
+    padding: 20px 10px;
+  }
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: Powder Blue;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+ 
+ .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .header-right {
+    float: right;
+
 </style>
 </head> 
 <body>
+		
 <div class="header">
-	     <a class="active" href="index.html">Sign up</a>
-         <a href="#" class="fa fa-twitter"></a>     
-		</div>
+         <a href="#" class="fa fa-twitter"></a>     	
+            <div class="header-right">
+	 <a class="" href="index.html">Sign up</a>
+            </div>
+          </div> 
+		
 
 <fieldset>
 <legend><h1>Log in to Twitter.</h1></legend>
 <div class="g">
 <form action="form_submit.php" method="post">
 <label for="Username">Phone, email or username</label><br>
-<input type="text" id="Username" name="Username" required><br>
+<input type="text" id="Username" name="Username" required autofocus><br>
 <label for="pwd">Password</label><br>
-<input type="Password" id="pwd" name="pwd" required>
+<input type="Password" id="pwd" name="pwd" required >
 </form>
 </div>
 <br>
@@ -127,6 +156,7 @@ input[type=text], input[type=password] {
 
 <hr>
 <button type="submit" value="submit">Login</button>
+
 
 
 
